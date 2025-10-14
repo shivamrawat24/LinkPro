@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0px;
+            padding: 0px;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: dodgerblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="box">can i come inside!</div>
+    <input type="text" id="onit">
+     <select name="home" id="SelectOption">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select> 
+    
+    <button onclick="handleTap()">submit</button>
+
+<script>
+    //  let user =shivam;
+    function handleTap(){
+        // alert("who's there!")
+        // if(user==shivam){
+        //     alert ("you can come")
+        // }
+        // else{
+        //     alert("who's there!")
+        // }
+        // console.log("handleTap called");
+    const inputText = document.getElementById("onit").value;
+        const SelectOption = document.getElementById('SelectOption').value;
+        alert(`you entered :${inputText}, and ${SelectOption} who's there!`);
+    }
+
+    
+    // rendering of data from input or select elements into javascript with the help of DOM and function
+
+</script>
+</body>
+</html>
