@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomeNew</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .box{
+            background-color: rgb(197, 140, 211);
+        }
+        .box ul{
+            height: 46px;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            list-style: none;
+            position: sticky;
+        }
+        .box ul li a{
+            text-decoration: none;
+            color: rgb(88, 64, 109);
+        }
+        .box ul li a:hover{
+            color: rgb(72, 12, 129);
+        }
+        .box ul li input{
+            height: 32px;
+            width: 200px;
+            padding: 10px;
+            background-color: mediumorchid;
+            border: 0 hidden mediumorchid;
+            border-radius: 20px;
+            margin: 3px 5px  ;
+            /* border:; */
+        }
+        /* .box ul li input::after{
+            border-style: hidden;
+        } */
+        .enterIt{
+            height: 40px;
+            width: 258px;
+            background-color: mediumorchid;
+            border: 1px solid blue;
+            border-radius: 20px;
+            
+        }
+        .fa-solid{
+            margin: 3px;
+        }
+        .secDiv{
+            background-color: rgb(142, 74, 74);
+            text-align: center;
+            padding: 10px;
+        }
+        .obito{
+            height: 60vh;
+            width: 100%;
+            background-color:  rgb(178, 103, 217);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            
+            
+        }
+        .obito img{
+            width: 500px;
+            height: 300px;
+            margin: 50px;
+            border-radius: 5px;
+        }
+        .hii1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .firstDiv button{
+            height: 35px;
+            width: 160px;
+            margin-top: 20px;
+            font-size: 1.3rem;
+            background-color: rebeccapurple;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">Services</a></li>
+                <li class="enterIt"><input type="search" placeholder="Search here!"><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="secDiv">
+            <p>
+                <h3>About this page</h3>
+
+                <p>Hi!, this page is created by shivam rawat. the purpose of making this page is to making time beneficial and revise the basic of programming. that's it ... let check what more i can add to this page... </p>
+            </p>
+        </div>
+        <div class="obito">
+            <img src="obito.png" alt="obitoStar">
+            <div class="firstDiv" >
+                <p class="hii1" id="listing">
+               <h4>Obito</h4> 
+                This is about Obito. a unsung hero of naruto anime. the character which sets fire in everyone heart by making an outside impact and the story of that character is unforgettable. the character shows why and how every villians are not born villian, that's the situation which make them and i'm sure no one will hate him. This character is OG.. </p> 
+            <button onclick="listMaker()">check!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function listMaker(){
+            const targetElement = document.getElementById('listing');
+            const newItem=document.createElement('li');
+            newItem.textContent='new list item --ok';
+            targetElement.appendChild(newItem); 
+            // const apple=document.getElementsByClassName("hii1");
+            // // apple.innerHTML=document.createElement('input');
+            // document.querySelector('apple');
+        }
+    </script>
+</body>
+</html>

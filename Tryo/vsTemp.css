@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cascadeo Code', monospace;
+}
+.studio{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    /* margin: 5px; */
+}
+.studio ul{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: whitesmoke;
+    font-size: 14px;
+    list-style: none;
+}
+.studio ul li{
+    margin-right: 10px;
+    /* padding: 5px; */
+   
+}
+.studio ul .oneDay{
+    margin-left: 11px;
+}
+.studio ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.studio ul li input{
+    width: 500px;
+    height: 28px;
+    border-radius: 10px;
+    border: 2px solid aqua;
+    padding-left: 200px;
+    background-color: black;
+    color: white;
+}
+.studio ul li .fa-arrow-left{
+    margin-left: 30px;
+}
+.studio ul li .fa-layer-group{
+    margin-left: 140px;
+}
+.studio ul li .fa-layer-link{
+    margin-left: 10px;
+}
+.studio ul li .fa-minus{
+    margin-left: 15px   ;
+}
+.studio ul li .fa-copy{
+    margin-left: 12px;
+}
+.studio ul li .fa-xmark{
+    margin-left: 12px;
+}
+.studio ul li input:hover{
+    border: 1px solid white; 
+}
+.studio ul li:hover{
+    border: 1px dotted aqua;
+    border-radius: 2px;
+}
+td{
+    color:white
+}
