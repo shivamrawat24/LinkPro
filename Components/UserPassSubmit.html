@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Check</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            columns: blue;
+        }
+        .big_box{
+            height: auto;
+            width: 100%;
+            background: linear-gradient(black,green,white);
+            padding: 100px 450px;
+            display: flex;
+            flex-direction: column;
+        }
+        .big_box h1{
+            padding-left: 220px;
+            padding-bottom: 30px;
+            color: greenyellow;
+        }
+        .small_box{
+            height: 450px;
+            width: 600px;
+            background-color: white;
+            border: 1 solid springgreen;
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 30px 30px 30px;
+            /* columns: black; */
+        }
+        .small_box h2{
+            margin: 16px;
+            padding-left: 180px;
+        }
+        .small_box input{
+            height: 55px;
+            width: 100%;
+            font-size: 19px;
+            margin-bottom: 30px;
+            padding-left: 10px;
+        }
+        .small_box button{
+            height: 40px;
+            font-size: 19px;
+            background-color: rgb(189, 217, 189);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big_box">
+        <h1>Good Day!</h1>
+        <div class="small_box" id="okit">
+            <h2>Sign Up here!</h2>
+            <input type="text" id="put" placeholder="Username">
+            <input type="password" id="passPut" placeholder="Password">
+            <button onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        let put=document.getElementById("put");
+        let passPut=document.getElementById("passPut");
+
+        function submit(){
+            if(put.value=="shivam" && passPut.value=="rawat"){
+                alert("you are logged in")
+            //    let newele= document.querySelector("small_box");
+            //    newele.innerHTML='<p> you are logged in</p>'
+            //     document.getElementById("okit").innerHTML=newele;
+            }
+            else{
+                alert(" not the correct user!")
+            }
+        }
+</script>
+    
+</body>
+</html>
