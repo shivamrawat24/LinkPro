@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: italic;
+}
+body{
+    background-color:rgb(138, 88, 188);
+    height: auto;
+    width: 100%;
+
+}
+.detailsHolder{
+    width: 480px;
+    height: auto;
+    background-color: rgb(104, 85, 123);
+    margin: 300px 490px ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+}
+.detailsHolder input{
+    height: 43px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 13px;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+}
+.detailsHolder button{
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none ;
+    margin-bottom: 10px;
+}
+.hider{
+    display: flex;
+    flex-direction: column; 
+}
+.newDetails{
+    font-size: 18px;
+}
+.newDetails a{
+    color: white;
+}
+.newDetails a:hover{
+    color: black;
+}
+.fillAgain{
+    background-color: red;
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+}
+
+.fillAgain input{
+    height: 38px;
+    width: 100%;
+    /* position: fixed; */
+    /* position: absolute; */
+}
