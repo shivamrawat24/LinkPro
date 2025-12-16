@@ -1,6 +1,6 @@
 This Repository contains multiple applications:
 
-Age Calculator (a practiced project with the help of outsources like Youtube, Google etc..) ,
+
 
 Components ( this file contains a user login page with basic Html and css ... ) ,
 
